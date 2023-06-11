@@ -259,6 +259,7 @@ img {
 
 p {
     margin: 0 0 1.5em;
+    letter-spacing: 0.1em;
 }
 
 p:last-child {
@@ -267,7 +268,8 @@ p:last-child {
 
 a {
     text-decoration: none;
-    color: #4D4D4D;
+    color: #fff;
+    letter-spacing: 0.1em;
 }
 
 .section {
@@ -340,10 +342,10 @@ a {
 Variables
 ------------------------------------------------------ */
 :root {
-    --main-color: #333;
+    --main-color: #1A1A1A;
     --white-color: #fff;
-    --jp-font: 'Noto Sans JP', sans-serif;
-    --en-font: 'Kiwi Maru', serif;
+    --jp-font: 'Shippori Mincho', serif;
+    --en-font: 'EB Garamond', serif;
 }
 
 .d_flex {
@@ -381,6 +383,8 @@ html {
 body {
     font-family: var(--jp-font);
     color: var(--main-color);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 #wrapper {
@@ -396,6 +400,21 @@ body {
     position: relative;
 }
 
+.is-effect.effect-active {
+    animation: fadeup 1.5s ease forwards;
+}
+
+@keyframes fadeup {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
 /* ------------------------------------------------------
 Contents
 ------------------------------------------------------ */
@@ -403,47 +422,14 @@ Contents
 /* ------------------------------------------------------
 Header
 ------------------------------------------------------ */
-#header {
-    width: 100%;
-    margin: 0 auto;
-    text-align: left;
-}
 
-/*
-#header.header_fixed {
-    position: fixed;
-    z-index: 9999;
-    animation: scrolltop 0.8s;
-    animation-iteration-count: 1;
-}
 
-@keyframes scrolltop {
-    0% {
-        transform: translateY(-80px);
-        transform-origin: center;
-        opacity: 0;
-        transition: ease-in-out;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-*/
 
 /* ------------------------------------------------------
 Footer
 ------------------------------------------------------ */
-#footer {
-    margin-top: 45px;
-}
 
-#footer address {
-    font-size: 0.875rem;
-    font-style: normal;
-    text-align: center;
-}
+
 
 
 /* MOZZILLA CSS */

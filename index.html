@@ -14,12 +14,9 @@
 <link rel="stylesheet" href="./css/style.css" />
 <link rel="stylesheet" href="./css/component.css">
 <link rel="stylesheet" href="./css/style_res.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="./js/jquery.js"></script> 
 <!-- Google Analytics start --> 
 <!-- Google Analytics end -->
@@ -28,8 +25,9 @@
 <body id="home">
 <div id="wrapper">
   <header id="header">
-    <h1 id="top"><a href="./"><img src="" alt=""></a></h1>
-    <div id="toggle-menu">
+    <h1 id="top"><a href="./"><img src="./images/header/logo_white.png" width="230" alt="Amitie"></a></h1>
+    <div class="toggle_block">
+      <div id="toggle-menu">
         <div class="hamburger">
           <span class="bar bar1"></span> 
           <span class="bar bar2"></span> 
@@ -37,10 +35,37 @@
           <span class="bar bar4"></span> 
         </div>
       </div>
-    <div class="menu"></div>
+      <span class="bar_txt">MENU</span>
+    </div>
+    <div class="menu">
+      <div class="menu_block">
+        <nav>
+          <ul class="menu_item">
+            <li class="menu_list"><a href="#">ホーム</a></li>
+            <li class="menu_list"><a href="#">私たちについて</a></li>
+            <li class="menu_list"><a href="#">不動産売買</a></li>
+            <li class="menu_list"><a href="#">相続に関するご相談</a></li>
+            <li class="menu_list"><a href="#">都市開発</a></li>
+            <li class="menu_list"><a href="#">リフォーム・リノベーション</a></li>
+            <li class="menu_list"><a href="#">その他事業</a></li>
+          </ul>
+          <ul class="menu_item">
+            <li class="menu_list"><a href="#">実績紹介</a></li>
+            <li class="menu_list"><a href="#">物件情報</a></li>
+            <li class="menu_list"><a href="#">ご利用の流れ</a></li>
+            <li class="menu_list"><a href="#">よくあるご質問</a></li>
+            <li class="menu_list"><a href="#">会社概要</a></li>
+            <li class="menu_list"><a href="#">お知らせ</a></li>
+            <li class="menu_list"><a href="#">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <div class="menu_logo">
+          <p><a href="./"><img src="./images/header/logo_white.png" width="160" alt="Amitie"><span>アミティエ株式会社</span></a></p>
+        </div>
+      </div>
+    </div>
     <div class="overlay"></div>
   </header>
-  
   <!-- main start -->
   <main id="main"> 
     <!-- idx_mainvisual -->
@@ -49,52 +74,281 @@
         <div class="mainvisual_contain">
             <div class="top_slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="./images/top/image_mainvisual1.jpg" alt="image_mainvisual1"></div>
-                    <div class="swiper-slide"><img src="./images/top/image_mainvisual2.jpg" alt="image_mainvisual2"></div>
-                    <div class="swiper-slide"><img src="./images/top/image_mainvisual3.jpg" alt="image_mainvisual3"></div>
-                    <div class="swiper-slide"><img src="./images/top/image_mainvisual4.jpg" alt="image_mainvisual4"></div>
+                  <div class="swiper-slide"><img src="./images/top/ami_01.jpg" alt="Amitie"></div>
+                  <div class="swiper-slide"><img src="./images/top/ami_02.jpg" alt="Amitie"></div>
+                  <div class="swiper-slide"><img src="./images/top/ami_03.jpg" alt="Amitie"></div>
+                  <div class="swiper-slide"><img src="./images/top/ami_04.jpg" alt="Amitie"></div>
+                  <div class="swiper-slide"><img src="./images/top/ami_05.jpg" alt="Amitie"></div>
+                  <div class="swiper-slide"><img src="./images/top/ami_06.jpg" alt="Amitie"></div>
+                  <div class="swiper-slide"><img src="./images/top/ami_07.jpg" alt="Amitie"></div>
+                  <div class="swiper-slide"><img src="./images/top/ami_08.jpg" alt="Amitie"></div>
+                  <div class="swiper-slide"><img src="./images/top/ami_09.jpg" alt="Amitie"></div>
+                  <div class="swiper-slide"><img src="./images/top/ami_10.jpg" alt="Amitie"></div>
                 </div>
             </div>
         </div>
+        <div class="mainvisual_content">
+          <h2 class="main_title"><span>「最良」に導く、</span><span>「最高」のパートナーとして。</span></h2>
+        </div>
+        <a href="#idx_intro" class="scrolldown">
+          <span>SCROLL</span>
+          <div></div>
+        </a>
       </div>
     </section>
     
-    <!-- idx_xxx -->
-    <section id="idx_xxx">
-      <div class="inner"></div>
+    <!-- idx_intro -->
+    <section id="idx_intro">
+      <div class="inner">
+        <div class="intro_heading is-effect">
+          <h3 class="intro_title">不動産や建物に関する<br>あらゆる課題を解決に導きます。</h3>
+          <div class="intro_desc">
+            <p>私たちアミティエ株式会社は、<br>不動産や建物に関するあらゆる課題を解決に導く<br>プロフェッショナル企業です。</p>
+            <p>不動産に関する豊富な経験と知見で<br>お客様の理想をカタチにするパートナーとなることが<br>私たちアミティエの使命です。</p>
+            <p>弊社のプロフェッショナルチームは<br>お客様の期待を上回る成果を目指し、<br>お客様・土地所有者両者・金融機関等と緊密に連携して<br>目に見える結果を出すことをお約束します。</p>
+            <p>相続や土地活用など、幅広い領域での対応も可能ですので、<br>ぜひお気軽にご相談ください。</p>
+          </div>
+        </div>
+        <p class="btn_primary">
+          <a href="https://test.plust-web.work/studio-dplus.com/about/">
+            <span>私たちについて</span>
+          </a>
+        </p>
+      </div>
     </section>
     
-    <!-- idx_xxxx -->
-    <section id="idx_xxxx">
-      <div class="inner"></div>
+       <!-- idx_impossible -->
+    <div id="idx_impossible">
+      <div class="inner">
+        <div class="impossible_slideImg">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/top/impossible1.jpg" alt="Amitie"></div>
+            <div class="swiper-slide"><img src="./images/top/impossible2.jpg" alt="Amitie"></div>
+            <div class="swiper-slide"><img src="./images/top/impossible3.jpg" alt="Amitie"></div>
+            <div class="swiper-slide"><img src="./images/top/impossible4.jpg" alt="Amitie"></div>
+            <div class="swiper-slide"><img src="./images/top/impossible5.jpg" alt="Amitie"></div>
+            <div class="swiper-slide"><img src="./images/top/impossible6.jpg" alt="Amitie"></div>
+            <div class="swiper-slide"><img src="./images/top/impossible7.jpg" alt="Amitie"></div>
+            <div class="swiper-slide"><img src="./images/top/impossible8.jpg" alt="Amitie"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <!-- idx_services -->
+    <section id="idx_services">
+      <div class="inner">
+        <h3 class="h_title">
+          SERVICE
+          <span class="jp">事業紹介</span>
+        </h3>
+        <p class="txt">私たちは、日々の暮らしの土台となる「建物」「不動産」のプロフェッショナルとして<br>幅広い事業領域を展開しています。</p>
+        <ul class="idx_services_content">
+          <li class="idx_services_item">
+            <div class="idx_services_block">
+              <h5 class="idx_services_heading">不動産売買</h4>
+              <div class="idx_services_txt">
+                <div class="idx_services_ttl"><h4>Real Estate Transactions</h4></div>
+                <p class="idx_services_sub"><span>不動産売買</span></p>
+                <div class="idx_services_desc">
+                  <p>説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="idx_services_item">
+            <div class="idx_services_block">
+              <h5 class="idx_services_heading">相続に関するご相談</h4>
+              <div class="idx_services_txt">
+                <div class="idx_services_ttl"><h4>Inheritance Consultation</h4></div>
+                <p class="idx_services_sub"><span>相続に関するご相談</span></p>
+                <div class="idx_services_desc">
+                  <p>説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="idx_services_item">
+            <div class="idx_services_block">
+              <h5 class="idx_services_heading">都市開発</h4>
+              <div class="idx_services_txt">
+                <div class="idx_services_ttl"><h4>Urban Development</h4></div>
+                <p class="idx_services_sub"><span>都市開発</span></p>
+                <div class="idx_services_desc">
+                  <p>説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="idx_services_item">
+            <div class="idx_services_block">
+              <h5 class="idx_services_heading">リフォーム・<br>リノベーション</h4>
+              <div class="idx_services_txt">
+                <div class="idx_services_ttl"><h4>Renovation</h4></div>
+                <p class="idx_services_sub"><span>リフォーム・リノベーション</span></p>
+                <div class="idx_services_desc">
+                  <p>説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="idx_services_item">
+            <div class="idx_services_block">
+              <h5 class="idx_services_heading">その他事業</h4>
+              <div class="idx_services_txt">
+                <div class="idx_services_ttl"><h4>Other Businesses</h4></div>
+                <p class="idx_services_sub"><span>その他事業</span></p>
+                <div class="idx_services_desc">
+                  <p>説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります説明テキストが入ります。</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+ 
+    <!-- idx_project -->
+    <section id="idx_project">
+      <div class="inner">
+        <h3 class="h_title">
+          PROJECTS
+          <span class="jp">実績紹介</span>
+        </h3>
+        <p class="txt">これまでに私たちアミティエ株式会社が携わったプロジェクト実績の一部をご紹介いたします。<br>土地・旧耐震建物・既存不適格建物・アパート等、不動産のあるべき価値を高めるためにあらゆる視点から検討し、<br>これまでに多数の取引を成立させてまいりました。</p>
+        <div class="project_slider"></div>
+        <p class="btn_primary">
+          <a href="#">
+            <span>実績紹介ページへ</span>
+          </a>
+        </p>
+      </div>
     </section>
     
-    <!-- idx_xxxxx -->
-    <section id="idx_xxxxx">
-      <div class="inner"></div>
+    <!-- idx_about -->
+    <section id="idx_about">
+      <div class="inner">
+        <ul class="idx_about_list">
+          <li class="idx_about_item">
+            <figure><img width="300" src="./images/top/impossible5.jpg" alt=""></figure>
+            <div class="idx_about_content">
+              <h4 class="idx_about_ttl">物件情報<span class="sub">INFORMATION</span></h4>
+            </div>
+          </li>
+          <li class="idx_about_item">
+            <figure><img width="300" src="./images/top/impossible6.jpg" alt=""></figure>
+            <div class="idx_about_content">
+              <h4 class="idx_about_ttl">ご利用の流れ<span class="sub">FLOW</span></h4>
+            </div>
+          </li>
+          <li class="idx_about_item">
+            <figure><img width="300" src="./images/top/impossible7.jpg" alt=""></figure>
+            <div class="idx_about_content">
+              <h4 class="idx_about_ttl">よくあるご質問<span class="sub">FAQ</span></h4>
+            </div>
+          </li>
+          <li class="idx_about_item">
+            <figure><img width="300" src="./images/top/impossible8.jpg" alt=""></figure>
+            <div class="idx_about_content">
+              <h4 class="idx_about_ttl">会社概要<span class="sub">COMPANY</span></h4>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
-    
-    <!-- idx_xxxxxx -->
-    <section id="idx_xxxxxx">
-      <div class="inner"></div>
+
+    <!-- idx_news -->
+    <section id="idx_news">
+      <div class="inner">
+        <h3 class="h_title">NEWS<span class="jp">お知らせ</span></h3>
+        <ul class="news">
+          <li class="news_item"> 
+            <a href="#">
+              <div class="news_block">
+                <p class="news_cat"><span>【カテゴリー01】</span></p><span class="news_date">2023.00.00</span>
+              </div>
+              <div class="news_txt"><p>こちらにはタイトルが入ります。こちらにはタイトルが入ります。</p></div>
+            </a>
+          </li>
+          <li class="news_item"> 
+            <a href="#">
+              <div class="news_block">
+                <p class="news_cat"><span>【カテゴリー02】</span></p><span class="news_date">2023.00.00</span>
+              </div>
+              <div class="news_txt"><p>こちらにはタイトルが入ります。こちらにはタイトルが入ります。</p></div>
+            </a>
+          </li>
+          <li class="news_item"> 
+            <a href="#">
+              <div class="news_block">
+                <p class="news_cat"><span>【カテゴリー03】</span></p><span class="news_date">2023.00.00</span>
+              </div>
+              <div class="news_txt"><p>こちらにはタイトルが入ります。こちらにはタイトルが入ります。こちらにはタイトルが入ります。こちらに…</p></div>
+            </a>
+          </li>
+        </ul>
+        <p class="btn_primary">
+          <a href="https://test.plust-web.work/studio-dplus.com/about/">
+            <span>一覧を見る</span>
+          </a>
+        </p>
+      </div>
     </section>
-    
-    <!-- idx_xxxxxxx -->
-    <section id="idx_xxxxxxx">
-      <div class="inner"></div>
-    </section>
+
   </main>
   <!-- main end -->
   
   <footer id="footer">
-    <address>
-    Copyright &copy; All Rights Reserved.
-    </address>
-    <div id="totop">
-      <p><a><img src="./images/totop.png" alt="トップへ戻る" width="97"/></a></p>
+    <div class="inner">
+      <div class="f_contact">
+        <div class="f_contact_block">
+          <h3 class="f_contact_title">CONTACT<span>／お問い合わせ</span></h3>
+          <p class="f_contact_txt">事業に関するお問い合わせや不動産に関するご相談など、お気軽にお問い合わせください。<br>お問い合わせ内容によって返信に時間がかかる場合がございますので、予めご了承ください。</p>
+        </div>
+        <p class="btn-primary2">
+          <a href="#">お問い合わせフォーム</a>
+        </p>
+      </div>
+      <div class="f_content">
+        <div class="f_info">
+          <p class="f_info_logo">
+            <img src="./images/footer/logo_white.png" width="224" alt=""><span class="sub">アミティエ株式会社</span>
+          </p>
+          <div class="f_info_adrress">
+            <p>〒164-0003　東京都中野区東中野1丁目30番15号 SPACE-M 201</p>
+            <p><a href="tel:0368242636">TEL : 03-6824-2636</a><span>FAX : 03-6824-2636</span></p>
+          </div>
+        </div>
+        <nav class="f_menu">
+          <ul class="f_menu_list">
+            <li class="f_menu_item"><a href="">ホーム</a></li>
+            <li class="f_menu_item"><a href="">私たちについて</a></li>
+            <li class="f_menu_item"><a href="">不動産売買</a></li>
+            <li class="f_menu_item"><a href="">相続に関するご相談</a></li>
+            <li class="f_menu_item"><a href="">都市開発</a></li>
+            <li class="f_menu_item"><a href="">リフォーム・リノベーション</a></li>
+            <li class="f_menu_item"><a href="">その他事業</a></li>
+          </ul>
+          <ul class="f_menu_list">
+            <li class="f_menu_item"><a href="">実績紹介</a></li>
+            <li class="f_menu_item"><a href="">物件情報</a></li>
+            <li class="f_menu_item"><a href="">ご利用の流れ</a></li>
+            <li class="f_menu_item"><a href="">よくあるご質問</a></li>
+            <li class="f_menu_item"><a href="">会社概要</a></li>
+            <li class="f_menu_item"><a href="">お知らせ</a></li>
+            <li class="f_menu_item"><a href="">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <address>&copy;2023 Amitie Co., Ltd</address>
     </div>
   </footer>
 </div>
+<script src="./js/ScrollMagic.min.js"></script>
+<script src="./js/debug.addIndicators.min.js"></script>
+<script src="./js/gsap.min.js"></script>
+<script src="./js/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 <script src="./js/swiper.min.js"></script>
 <script src="./js/common.js"></script> 
 <script src="./js/top.js"></script>

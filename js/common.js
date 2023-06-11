@@ -53,28 +53,38 @@ $(window).bind("load", function () {
 //totop
 $(document).ready(function () {
   "use strict";
-  $("#toTop").hide();
-  $("#toTop a").click(function () {
-    $("body,html").animate(
-      {
-        scrollTop: 0,
-      },
-      800
-    );
-  });
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 500) {
-      $("#toTop").fadeIn();
-    } else {
-      $("#toTop").fadeOut();
-    }
-  });
-
   $("#toggle-menu").click(function (e) {
     e.preventDefault();
     $(this).toggleClass("active");
     $(".hamburger").toggleClass("active");
-    $("#overlay").toggleClass("opened");
-    $(".menu").toggleClass("opened");
+    $(".overlay").toggleClass("opened");
+    $(".menu").toggleClass("active");
+    $('.menu_logo').toggleClass("active");
+    $('.menu_item').toggleClass("active");
   });
+  $(".overlay").click(function (e) {
+    e.preventDefault();
+    $(this).removeClass("opened");
+    $(".hamburger").removeClass("active");
+    $(".menu").removeClass("active");
+    $('.menu_logo').removeClass("active");
+    $('.menu_item').removeClass("active");
+  });
+
+  // scrolleffect
+  scrolleffect();
+  function scrolleffect() {
+    var controller = new ScrollMagic.Controller();
+    $(".is-effect").each(function () {
+      var headerScene = new ScrollMagic.Scene({
+        triggerElement: this,
+        offset: -200,
+        reverse: false,
+      })
+        .setClassToggle(this, "effect-active")
+        .addTo(controller);
+    });
+  }
 });
+
+
