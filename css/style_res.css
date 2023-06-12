@@ -49,9 +49,11 @@
     line-height: 2;
   }
   /*-- footer --*/
-  #footer .f_contact,
-  #footer .f_content {
+  #footer .f_contact{
     padding: 0 3% 55px;
+  }
+  #footer .f_content{
+    padding: 0 3% 45px;
   }
 }
 
@@ -66,6 +68,9 @@
   .btn_primary a:hover::after {
     transform: scaleX(1) translateZ(0);
     transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
+  }
+  #idx_mainvisual .inner .scrolldown:hover{
+    opacity: 0.7;
   }
 }
 
@@ -108,13 +113,14 @@
 ------------------------------------------------------ */
   /*-- idx_intro --*/
   #idx_intro {
-    padding: 55px 0 100px;
+    padding: 55px 0 150px;
   }
   #idx_intro .intro_heading {
     margin-bottom: 55px;
   }
   #idx_intro .intro_desc {
     line-height: 2;
+    margin-top: 35px;
   }
   #idx_intro .intro_desc p {
     margin-left: 20px;
@@ -124,7 +130,16 @@
     line-height: 2;
     margin-left: 30px;
   }
-  /*-- idx_intro --*/
+  /*-- idx_services --*/
+  #idx_services{
+    padding-top: 70px;
+  }
+  #idx_services .inner .h_title{
+    margin-bottom: 35px;
+  }
+  #idx_services .inner .txt{
+    margin-bottom: 45px;
+  }
   #idx_services .idx_services_item {
     padding: 55px 0;
   }
@@ -149,6 +164,9 @@
   /*-- idx_project --*/
   #idx_project {
     padding: 60px 0 55px;
+  }
+  #idx_project .inner > .h_title{
+    margin-bottom: 25px;
   }
   #idx_project .project_slider_title {
     font-size: 1.563vw;
@@ -342,6 +360,13 @@
   #idx_intro .intro_desc p {
     margin-left: 0;
   }
+  /*-- idx_services --*/
+  #idx_services .inner .h_title{
+    margin-bottom: 45px;
+  }
+  #idx_project .inner .txt{
+    margin-bottom: 35px;
+  }
   /*-- idx_impossible --*/
   #idx_impossible::before {
     animation-duration: 80s;
@@ -354,6 +379,9 @@
     max-width: 100%;
   }
   /*-- idx_project --*/
+  #idx_project .inner > .h_title {
+    margin-bottom: 45px;
+}
   #idx_project .project_slider_title {
     font-size: 2vw;
   }
@@ -375,6 +403,9 @@
     margin-right: 0;
   }
   /*-- idx_news --*/
+  #idx_news .inner > .h_title {
+    margin-bottom: 55px;
+}
   .news_item a {
     padding: 25px 10px;
   }

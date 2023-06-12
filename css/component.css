@@ -445,6 +445,7 @@
   font-size: 150px;
   position: relative;
   color: #999;
+  line-height: 1;
   text-align: center;
 }
 .h_title .jp {
@@ -552,7 +553,7 @@
   bottom: calc(100% - 87px);
   z-index: 2;
   transition: all 1s linear;
-  animation: TitleRight 40s linear infinite;
+  animation: TitleRight 100s linear infinite;
 }
 #idx_impossible .inner {
   max-width: 100%;
@@ -574,14 +575,14 @@
 
 /*-- idx_services --*/
 #idx_services {
-  padding-top: 102px;
+  padding-top: 140px;
 }
 #idx_services .inner {
   width: 100%;
   max-width: 100%;
 }
-#idx_services .inner > .h_title {
-  margin-bottom: 41px;
+#idx_services .inner .h_title {
+  margin-bottom: 78px;
 }
 #idx_services .inner .txt {
   margin-bottom: 112px;
@@ -707,10 +708,10 @@
 #idx_project {
   background-image: url("../images/top/background_about.jpg");
   background-size: cover;
-  padding: 88px 0 157px;
+  padding: 125px 0 157px;
 }
 #idx_project .inner > .h_title {
-  margin-bottom: 41px;
+  margin-bottom: 78px;
 }
 #idx_project .inner .txt {
   margin-bottom: 43px;
@@ -921,13 +922,13 @@
 /*-- idx_news --*/
 #idx_news {
   background: #f2efe6;
-  padding: 92px 0 146px;
+  padding: 130px 0 146px;
 }
 #idx_news .inner {
   max-width: 1060px;
 }
 #idx_news .inner > .h_title {
-  margin-bottom: 50px;
+  margin-bottom: 88px;
 }
 #idx_news .news {
   margin-bottom: 95px;

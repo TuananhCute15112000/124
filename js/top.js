@@ -1,6 +1,6 @@
 $(document).ready(function () {
   "use strict";
-  Splitting();
+  var s = Splitting();
   const swiper = new Swiper(".top_slider", {
     loop: true,
     effect: "fade",
@@ -22,7 +22,7 @@ $(document).ready(function () {
     loop: true,
     spaceBetween: 30,
     slidesPerView: "auto",
-    speed: 6000,
+    speed: 13000,
     allowTouchMove: false,
     breakpoints: {
       320: {

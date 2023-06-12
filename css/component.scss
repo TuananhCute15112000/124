@@ -532,6 +532,7 @@
     font-size: 150px;
     position: relative;
     color: #999;
+    line-height: 1;
     text-align: center;
     .jp {
         position: absolute;
@@ -653,7 +654,7 @@
         bottom: calc(100% - 87px);
         z-index: 2;
         transition: all 1s linear;
-        animation: TitleRight 40s linear infinite;
+        animation: TitleRight 100s linear infinite;
     }
     .inner {
         max-width: 100%;
@@ -680,12 +681,12 @@
 
 /*-- idx_services --*/
 #idx_services {
-    padding-top: 102px;
+    padding-top: 140px;
     .inner {
         width: 100%;
         max-width: 100%;
-        > .h_title {
-            margin-bottom: 41px;
+        .h_title {
+            margin-bottom: 78px;
         }
         .txt {
             margin-bottom: 112px;
@@ -833,11 +834,11 @@
 #idx_project {
     background-image: url("../images/top/background_about.jpg");
     background-size: cover;
-    padding: 88px 0 157px;
+    padding: 125px 0 157px;
 
     .inner {
         > .h_title {
-            margin-bottom: 41px;
+            margin-bottom: 78px;
         }
         .txt {
             margin-bottom: 43px;
@@ -1068,12 +1069,12 @@
 /*-- idx_news --*/
 #idx_news {
     background: #f2efe6;
-    padding: 92px 0 146px;
+    padding: 130px 0 146px;
 
     .inner {
         max-width: 1060px;
         > .h_title {
-            margin-bottom: 50px;
+            margin-bottom: 88px;
         }
     }
 
