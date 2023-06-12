@@ -8,14 +8,14 @@ $(window).bind("load", function () {
         if ($(window).width() > 768) {
           $("html,body").animate(
             {
-              scrollTop: p.top - 170,
+              scrollTop: p.top,
             },
             600
           );
         } else {
           $("html,body").animate(
             {
-              scrollTop: p.top - 60,
+              scrollTop: p.top,
             },
             600
           );
@@ -59,16 +59,16 @@ $(document).ready(function () {
     $(".hamburger").toggleClass("active");
     $(".overlay").toggleClass("opened");
     $(".menu").toggleClass("active");
-    $('.menu_logo').toggleClass("active");
-    $('.menu_item').toggleClass("active");
+    $(".menu_logo").toggleClass("active");
+    $(".menu_item").toggleClass("active");
   });
   $(".overlay").click(function (e) {
     e.preventDefault();
     $(this).removeClass("opened");
     $(".hamburger").removeClass("active");
     $(".menu").removeClass("active");
-    $('.menu_logo').removeClass("active");
-    $('.menu_item').removeClass("active");
+    $(".menu_logo").removeClass("active");
+    $(".menu_item").removeClass("active");
   });
 
   // scrolleffect
@@ -86,5 +86,4 @@ $(document).ready(function () {
     });
   }
 });
-
 
