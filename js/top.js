@@ -41,7 +41,7 @@ $(document).ready(function () {
       type: "fraction",
       renderFraction: function (currentClass, totalClass) {
         return (
-          '<span class="' +currentClass +'"></span>' +" ／" +'<span class="' +totalClass +'"></span>'
+          '<span class="' +currentClass +'"></span>' +"／" +'<span class="' +totalClass +'"></span>'
         );
       },
     },

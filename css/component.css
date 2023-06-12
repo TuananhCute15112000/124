@@ -112,7 +112,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 10px 20px 10px 40px;
+  padding: 30px 20px 10px 40px;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -795,7 +795,7 @@
   width: auto !important;
   position: unset !important;
   font-size: 15px;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.3em;
   font-weight: 700;
   color: #5b2f2c;
   padding-left: 27px;
