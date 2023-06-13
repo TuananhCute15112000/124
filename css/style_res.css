@@ -58,6 +58,9 @@
 }
 
 @media screen and (min-width: 1025px) {
+  a[href^="tel"] {
+    pointer-events: none;
+  }
   /*-- header --*/
   #header .menu_list a:hover::after {
     transform: scaleX(1);
@@ -166,7 +169,7 @@
     margin-bottom: 60px;
   }
   #header .toggle_block {
-    top: 10px;
+    top: 3px;
     right: 20px;
   }
   /*-- idx_mainvisual --*/
