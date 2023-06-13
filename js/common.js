@@ -53,9 +53,9 @@ $(window).bind("load", function () {
 // menu
 $(document).ready(function () {
   "use strict";
-  $("#toggle-menu").click(function (e) {
+  $(".toggle_block").click(function (e) {
     e.preventDefault();
-    $(this).toggleClass("active");
+    $('#toggle-menu').toggleClass("active");
     $(".hamburger").toggleClass("active");
     $(".overlay").toggleClass("opened");
     $(".menu").toggleClass("active");
