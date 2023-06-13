@@ -89,7 +89,10 @@
     font-size: 16px;
   }
   #header {
-    padding-left: 20px;
+    padding: 10px;
+  }
+  #header #top img {
+    width: 170px;
   }
   #header .menu {
     width: 70vw;
@@ -106,7 +109,7 @@
   }
   /*-- idx_mainvisual --*/
   #idx_mainvisual .mainvisual_content .main_title {
-    font-size: 20px;
+    font-size: 22px;
   }
   #idx_mainvisual {
     min-height: 420px;
@@ -122,7 +125,7 @@
     padding: 55px 0 150px;
   }
   #idx_intro .intro_heading {
-    margin-bottom: 55px;
+    margin-bottom: 45px;
   }
   #idx_intro .intro_desc {
     line-height: 2;
@@ -141,34 +144,26 @@
     padding-top: 70px;
   }
   #idx_services .inner .h_title {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
   #idx_services .inner .txt {
     margin-bottom: 45px;
+    line-height: 1.75;
   }
   #idx_services .idx_services_item {
     padding: 55px 0;
-    align-items: center;
-  }
-  #idx_services .idx_services_block{
-    flex-direction: column;
-    align-items: center;
   }
   #idx_services .idx_services_heading {
     margin-left: 0;
     font-size: 32px;
-    margin-bottom: 35px;
-    position: relative;
-    left: auto;
-    top: auto;
   }
-  #idx_services .idx_services_txt{
-    margin: 0 auto 4vw;
+  #idx_services .idx_services_desc{
+    line-height: 1.8;
   }
   #idx_services .idx_services_ttl {
     margin-bottom: 15px;
   }
-  #idx_services .idx_services_ttl h4 {
+  #idx_services .idx_services_ttl h5 {
     font-size: 34px;
   }
   #idx_services .idx_services_sub span {
@@ -184,6 +179,9 @@
   }
   #idx_project .inner > .h_title {
     margin-bottom: 25px;
+  }
+  #idx_project .inner .txt{
+    line-height: 1.8;
   }
   #idx_project .project_slider_title {
     font-size: 1.563vw;
@@ -227,6 +225,7 @@
   }
   #idx_about .idx_about_ttl span {
     font-size: 10px;
+    margin-left: 0;
   }
   /*-- idx_news --*/
   #idx_news {
@@ -328,12 +327,6 @@
   .h_title .jp {
     font-size: 24px;
   }
-  #header {
-    padding: 10px;
-  }
-  #header #top img {
-    width: 170px;
-  }
   #header .menu {
     width: 100vw;
   }
@@ -367,6 +360,9 @@
                         Contents
 ------------------------------------------------------ */
   /*-- idx_intro --*/
+  #idx_intro {
+    padding: 55px 0 18vw;
+  }
   #idx_intro .intro_heading {
     flex-direction: column;
     align-items: center;
@@ -375,32 +371,36 @@
     margin-left: 0;
   }
   #idx_intro .intro_desc {
-    writing-mode: inherit;
     margin-top: 35px;
   }
   #idx_intro .intro_desc p {
-    margin-left: 0;
+    margin-left: 10px;
   }
   /*-- idx_services --*/
   #idx_services .inner .h_title {
     margin-bottom: 45px;
   }
+  #idx_services .idx_services_block {
+    flex-direction: column;
+    justify-content: center;
+  }
   #idx_project .inner .txt {
     margin-bottom: 35px;
   }
-  /*-- idx_impossible --*/
-  #idx_intro {
-    padding: 55px 0 18vw;
-}
-  #idx_impossible::before {
-    animation-duration: 80s;
-  }
-  /*-- idx_intro --*/
   #idx_services .idx_services_heading {
+    position: relative;
+    left: auto;
+    top: auto;
     margin: 0 auto 35px;
   }
   #idx_services .idx_services_txt {
     max-width: 100%;
+    padding-left: 0;
+    margin: 0;
+  }
+  /*-- idx_impossible --*/
+  #idx_impossible::before {
+    animation-duration: 80s;
   }
   /*-- idx_project --*/
   #idx_project .inner > .h_title {
@@ -416,6 +416,9 @@
     max-width: 200px;
   }
   /*-- idx_about --*/
+  #idx_about {
+    padding: 60px 0 40px;
+  }
   #idx_about .idx_about_list {
     justify-content: center;
   }
@@ -462,6 +465,7 @@
   }
   #footer .inner address {
     text-align: center;
+    font-size: 12px;
   }
 }
 @media screen and (orientation: landscape) and (max-height: 767px) {
@@ -476,11 +480,19 @@
 }
 
 @media screen and (max-width: 390px) {
+  /*-- idx_intro --*/
+  #idx_intro .intro_desc {
+    font-size: 3.59vw;
+  }
+  /*-- idx_about --*/
   #idx_about .idx_about_item {
     width: 100%;
     margin: 0 auto 35px !important;
     max-width: 300px;
     height: 128.125vw;
+  }
+  #idx_about {
+    padding: 60px 0 25px;
   }
 }
 
