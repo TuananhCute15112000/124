@@ -50,7 +50,7 @@ $(window).bind("load", function () {
   }
 });
 
-//totop
+// menu
 $(document).ready(function () {
   "use strict";
   $("#toggle-menu").click(function (e) {
@@ -85,20 +85,18 @@ $(document).ready(function () {
         .addTo(controller);
     });
   }
-
-    // scrolleffect
-    scrollTitle();
-    function scrollTitle() {
-      var controller = new ScrollMagic.Controller();
-      $(".is-title").each(function () {
-        var headerScene = new ScrollMagic.Scene({
-          triggerElement: this,
-          offset: -200,
-          reverse: false,
-        })
-          .setClassToggle(this, "effect-title")
-          .addTo(controller);
-      });
-    }
+  // scrolleffect
+  scrollTitle();
+  function scrollTitle() {
+    var controller = new ScrollMagic.Controller();
+    $(".is-title").each(function () {
+      var headerScene = new ScrollMagic.Scene({
+        triggerElement: this,
+        offset: -200,
+        reverse: false,
+      })
+        .setClassToggle(this, "effect-title")
+        .addTo(controller);
+    });
+  }
 });
-

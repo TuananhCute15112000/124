@@ -148,11 +148,22 @@
   }
   #idx_services .idx_services_item {
     padding: 55px 0;
+    align-items: center;
+  }
+  #idx_services .idx_services_block{
+    flex-direction: column;
+    align-items: center;
   }
   #idx_services .idx_services_heading {
     margin-left: 0;
     font-size: 32px;
     margin-bottom: 35px;
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+  #idx_services .idx_services_txt{
+    margin: 0 auto 4vw;
   }
   #idx_services .idx_services_ttl {
     margin-bottom: 15px;

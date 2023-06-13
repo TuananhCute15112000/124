@@ -400,6 +400,16 @@ body {
   position: relative;
 }
 
+@keyframes zoom_animation {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.18);
+  }
+}
+
 .is-effect.effect-active {
   animation: fadeup 1.5s ease forwards;
 }
@@ -413,6 +423,47 @@ body {
   100% {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+@keyframes ScrollAnimation {
+  0% {
+    transform-origin: top center;
+    transform: scale(1, 0);
+  }
+
+  45% {
+    transform-origin: top center;
+    transform: scale(1, 1);
+  }
+
+  55% {
+    transform-origin: bottom center;
+    transform: scale(1, 1);
+  }
+
+  100% {
+    transform-origin: bottom center;
+    transform: scale(1, 0);
+  }
+}
+
+@keyframes TitleRight {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 2740px 0;
+  }
+}
+
+@keyframes TitleRight-01 {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 119.4vw 0;
   }
 }
 

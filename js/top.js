@@ -1,6 +1,5 @@
 $(document).ready(function () {
   "use strict";
-  var s = Splitting();
   const swiper = new Swiper(".top_slider", {
     loop: true,
     effect: "fade",
