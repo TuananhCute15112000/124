@@ -416,33 +416,6 @@ body {
   }
 }
 
-.h_title .words {
-  overflow: hidden;
-}
-.h_title .jp{
-  opacity: 0;
-  transition: opacity .6s ease 1s;
-}
-.h_title .splitting .char{
-  transform: translateY(100%);
-  opacity: 0;
-}
-.h_title.effect-title .splitting .char {
-  animation: slide-in 1s ease both;
-}
-.h_title.effect-title .jp{
-  opacity: 1;
-}
-@keyframes slide-in {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100%{
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 /* ------------------------------------------------------
 Contents
 ------------------------------------------------------ */

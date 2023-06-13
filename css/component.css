@@ -1,3 +1,4 @@
+/*-------idx_mainvisual-------*/
 #idx_mainvisual {
   height: 100vh;
 }
@@ -107,6 +108,7 @@
     transform: scale(1.18);
   }
 }
+/*-------header-------*/
 #header {
   position: fixed;
   top: 0;
@@ -154,7 +156,7 @@
   pointer-events: auto;
 }
 #header .menu_block {
-  padding-top: 100px;
+  padding-top: 120px;
 }
 #header .menu_block nav {
   display: flex;
@@ -445,8 +447,8 @@
   font-size: 150px;
   position: relative;
   color: #999;
-  line-height: 1;
   text-align: center;
+  line-height: 1;
 }
 .h_title .jp {
   position: absolute;
@@ -465,6 +467,25 @@
   font-family: var(--jp-font);
   letter-spacing: 0.1em;
   white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.5s ease 0.6s;
+}
+.h_title .hidden {
+  overflow: hidden;
+  display: block;
+}
+.h_title .hidden .effect {
+  display: block;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.5s ease;
+}
+.h_title.effect-title .jp {
+  opacity: 1;
+}
+.h_title.effect-title .hidden .effect {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .txt {
@@ -741,7 +762,7 @@
   position: relative;
 }
 #idx_project .project_slider .swiper-wrapper .swiper-slide a:hover img {
-  transform: scale(1.08);
+  transform: scale(1.06);
 }
 #idx_project .project_slider .swiper-wrapper .swiper-slide a img {
   width: 100%;
